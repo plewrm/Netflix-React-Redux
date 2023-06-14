@@ -1,4 +1,11 @@
-.App {
+.app{
+  background-color: #111;
+  /* height: 100vh; */
+}
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +43,4 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */
