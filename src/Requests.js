@@ -1,4 +1,5 @@
-const API_KEY = "daaba6bbe6610cf85d4f58cc1c6ac773";
+import { API_KEY } from "./constants/constants";
+// const API_KEY = "daaba6bbe6610cf85d4f58cc1c6ac773";
 // const API_KEY ="AIzaSyAigMgh6Y0eYU7N9vjRk4xtHrnEY9fQY30";
 
 const requests = {

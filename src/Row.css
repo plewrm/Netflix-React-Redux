@@ -1,8 +1,7 @@
 .row{
     color: white;
     background-color: black;
-    /* color: black; */
-    /* margin-left: 20px; */
+
 }
 .row__posters{
 display: flex;
@@ -29,3 +28,57 @@ padding: 20px;
 .row__posterLarge{
     max-height: 250px;
 }
+
+
+
+
+
+
+
+
+
+/* 
+.row{
+    background-color: black;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y:hidden ;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster_title{
+    padding: 10px;
+}
+
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+
+.smallPoster{
+    max-height: 199px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.smallPoster:hover{
+    transform: scale(1.1);
+}
+.poster_title{
+    margin-left: 20px;
+    margin-top: 10px;
+} */

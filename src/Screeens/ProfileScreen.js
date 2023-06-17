@@ -26,9 +26,9 @@ function ProfileScreen() {
           </div>
         </div>
       </div>
+      {/* <h2>Edit</h2> */}
 
 
-      <h2>Edit</h2>
     </div>
   )
 }

@@ -40,8 +40,8 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/profile" element={<ProfileScreen />}/>
-              
             <Route exact path="/" element={<HomeScreen />} />
+              
           </Routes>
         </Router>
       )}
