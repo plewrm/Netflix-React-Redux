@@ -1,15 +1,11 @@
 import React, { useRef } from "react";
 import "./SignUpScreen.css";
 import { auth } from "../firebase";
-// import { Link, useNavigate } from 'react-router-dom'
-// import  {useHistory}  from 'react-router-dom';
 
 const SignUpScreen = () => {
-  // const navigator = useNavigate();
 
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  // const history = useHistory();
   const register = (e) => {
     e.preventDefault();
     auth
@@ -33,14 +29,14 @@ const SignUpScreen = () => {
         passwordRef.current.value
       )
       .then((authUser) => {
-        // navigate("/")
+        // navigator("/")
         console.log(authUser);
       })
       .catch((error) => {
         alert(error.message);
       });
       // history.push('/');
-    // navigator("/")
+    // navigator("/myscreen")
 
 
   };

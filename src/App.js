@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import HomeScreen from "./Screeens/HomeScreen";
 import LoginScreen from "./Screeens/LoginScreen";
 import ProfileScreen from "./Screeens/ProfileScreen";
+import MyScreen from './Screeens/myscreen'
 import "./App.css";
 import { auth } from "./firebase";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -41,6 +42,7 @@ function App() {
           <Routes>
             <Route exact path="/profile" element={<ProfileScreen />}/>
             <Route exact path="/" element={<HomeScreen />} />
+            <Route exact path="/myscreen" element={<MyScreen />} />
               
           </Routes>
         </Router>
