@@ -30,8 +30,8 @@ export const userSlice = createSlice({
     login: (state, action) => {
       state.user = action.payload
     },
-    logout:(state,action)=>{
-      state.user=action.payload
+    logout:(state)=>{
+      state.user=null
     }
     // increment: (state) => {
     //   // Redux Toolkit allows us to write "mutating" logic in reducers. It
