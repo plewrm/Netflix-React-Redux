@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./LoginScreen.css";
 import SignUpScreen from "./SignUpScreen";
+
 const LoginScreen = () => {
   const [signIn, setSignIn]=useState(false)
   
   return (
+    <>
     <div className="loginScreen">
       <div className="loginScreen__background">
         <img
@@ -40,6 +42,7 @@ const LoginScreen = () => {
        
       </div>
     </div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 // import { Counter } from './features/counter/Counter';
 import HomeScreen from "./Screeens/HomeScreen";
 import LoginScreen from "./Screeens/LoginScreen";
+import Body from "./componenthome/Body";
 import ProfileScreen from "./Screeens/ProfileScreen";
 import MyScreen from './Screeens/myscreen'
 import "./App.css";
@@ -31,19 +32,23 @@ function App() {
       }
     });
     return unsubscribe;
-  }, [dispatch]); 
+  }, [dispatch]);
   return (
     <div className="">
       {/* <h1>Let's build Netflix</h1> */}
       {!user ? (
+        <>
         <LoginScreen />
+        {/* <Body/> */}
+        </>
+        
       ) : (
         <Router>
           <Routes>
-            <Route exact path="/profile" element={<ProfileScreen />}/>
+            <Route exact path="/profile" element={<ProfileScreen />} />
             <Route exact path="/" element={<HomeScreen />} />
             <Route exact path="/myscreen" element={<MyScreen />} />
-              
+
           </Routes>
         </Router>
       )}

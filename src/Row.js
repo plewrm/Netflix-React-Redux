@@ -18,7 +18,7 @@ function Row(props) {
     height: '390',
     width: '100%',
     playerVars: {
-      autoplay: 1,
+      autoPlay: 1,
     },
   };
   const handleMovie = (id) => {
@@ -85,7 +85,7 @@ export default Row
 //     width: "100%",
 //     playerVars: {
 
-//       autoplay: 1,
+//       autoPlay: 1,
 //     },
 //   }
 
