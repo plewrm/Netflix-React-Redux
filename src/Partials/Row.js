@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import axios from "./axios";
+import axios from "../api/axios";
 import "./Row.css"
 import YouTube from 'react-youtube'
-import { API_KEY, imageUrl } from './constants/constants'
+import { API_KEY, imageUrl } from '../constants/constants'
 function Row(props) {
   const [movies, setMovies] = useState([])
   const [urlid, setUrlid] = useState('')

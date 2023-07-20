@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 // import { Counter } from './features/counter/Counter';
 import HomeScreen from "./Screeens/HomeScreen";
 import LoginScreen from "./Screeens/LoginScreen";
-import Body from "./componenthome/Body";
+import Body from "./component/Body";
 import ProfileScreen from "./Screeens/ProfileScreen";
-import MyScreen from './Screeens/myscreen'
 import "./App.css";
-import { auth } from "./firebase";
+import { auth } from "./api/firebase";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   // const user={
@@ -35,7 +35,6 @@ function App() {
   }, [dispatch]);
   return (
     <div className="">
-      {/* <h1>Let's build Netflix</h1> */}
       {!user ? (
         <>
         <LoginScreen />
@@ -45,9 +44,8 @@ function App() {
       ) : (
         <Router>
           <Routes>
-            <Route exact path="/profile" element={<ProfileScreen />} />
             <Route exact path="/" element={<HomeScreen />} />
-            <Route exact path="/myscreen" element={<MyScreen />} />
+            <Route exact path="/profile" element={<ProfileScreen />} />
 
           </Routes>
         </Router>

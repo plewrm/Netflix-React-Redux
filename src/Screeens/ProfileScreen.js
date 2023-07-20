@@ -1,11 +1,12 @@
 import React from 'react'
 import './ProfileScreen.css'
-import Nav from '../Nav'
-import {auth} from '../firebase'
+import Nav from '../Partials/Nav'
+import {auth} from '../api/firebase'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../features/userSlice'
 import { Link, useNavigate } from 'react-router-dom';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 function ProfileScreen() {
   const user = useSelector(selectUser)
   const navigate  = useNavigate();
@@ -14,7 +15,7 @@ function ProfileScreen() {
     <div className='profileScreen'>
       <Nav />
       <div className="profileScreen__body">
-        <h1>Edit Profile</h1>
+        <h1> <Link style={{color:'white'}} to="/"><FontAwesomeIcon icon={faArrowLeftLong} /></Link> &nbsp;&nbsp;&nbsp;Profile and more</h1>
         <div className="profileScreen__info">
           <img
             src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png"
@@ -26,6 +27,9 @@ function ProfileScreen() {
               <button 
               className='profileScreen__signout'
               onClick={()=> {auth.signOut(); navigate("/")}}>Sign Out</button>
+              <button 
+              className='profileScreen__signout_Cancel'
+              onClick={()=> navigate("/")}>Cancel</button>
             </div>
           </div>
         </div>

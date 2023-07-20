@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import "./SignUpScreen.css";
-import { auth } from "../firebase";
-
+import { auth } from "../api/firebase";
+import { Link, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 const SignUpScreen = () => {
+  // const navigate = useNavigate()
 
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -35,20 +38,19 @@ const SignUpScreen = () => {
       .catch((error) => {
         alert(error.message);
       });
-      // history.push('/');
-    // navigator("/myscreen")
-
-
+   
   };
+
+
+
   return (
     <div className="signUpScreen">
+
       <form>
-        <h1>Sign In</h1>
-        <input ref={emailRef} placeholder="Email" type="email" />
+        <h1 >Sign In</h1>
+        <input ref={emailRef} placeholder="Email or phone number" type="email" />
         <input ref={passwordRef} placeholder="password" type="password" />
-        <button type="submit" onClick={signIn}>
-          Sign In
-        </button>
+        <button type="submit" onClick={signIn}>Sign In</button>
 
         <h4>
           <span style={{ color: "gray" }}>New to Netflix?</span>&nbsp;
@@ -57,6 +59,7 @@ const SignUpScreen = () => {
           </span>
         </h4>
       </form>
+      
     </div>
   );
 };

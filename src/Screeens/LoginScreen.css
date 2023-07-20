@@ -9,15 +9,16 @@
   position: fixed;
   left: 0;
   width: 150px;
-  top: 10px;
+  top: 30px;
   object-fit: contain;
-  padding-left: 20px;
+  padding-left: 30px;
+  cursor: pointer;
 }
 .loginScreen__button {
   position: fixed;
-  right: 20px;
-  top: 10px;
-  padding: 10px 20px;
+  right: 30px;
+  top: 30px;
+  padding: 10px 30px;
   font-size: 1rem;
   color: #ffff;
   background-color: #e50914;
@@ -46,15 +47,16 @@
 .loginScreen__body > h2 {
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .loginScreen__body > h3 {
   font-size: 1.3rem;
   font-weight: 400;
 }
 .loginScreen__body {
+  line-height: 2.8rem;
   position: absolute;
-  top: 15%;
+  top: 30%;
   margin-left: auto;
   /* margin-left: 150px; */
   margin-right: auto;

@@ -25,6 +25,7 @@ const Nav = () => {
     <div className={`nav ${show && "nav__black"}`}>
       <div className="nav__contents">
         <img
+          onClick={() => navigate("/")}
           className="nav__logo"
           src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
           alt=""
