@@ -16,7 +16,8 @@
 }
 
 .nav__logo {
-    position: fixed;
+    position: relative;
+    top: -8px;
     left: 0;
     width: 100px;
     cursor: pointer;

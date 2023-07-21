@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.css";
 import { useNavigate } from "react-router-dom";
+import PlewrmSecond from "../Assets/Final_Plewrm.webp"
 const Nav = () => {
   const [show, handleShow] = useState(false);
   const navigate = useNavigate();
@@ -27,7 +28,8 @@ const Nav = () => {
         <img
           onClick={() => navigate("/")}
           className="nav__logo"
-          src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+          src={PlewrmSecond}
+          // src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
           alt=""
         />
         <img
