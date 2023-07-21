@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./LoginScreen.css";
 import SignUpScreen from "./SignUpScreen";
+import Plewrm_Logo from "../Assets/Final_Plewrm.webp"
 const LoginScreen = () => {
   
   const [signIn, setSignIn] = useState(false)
@@ -11,7 +12,8 @@ const LoginScreen = () => {
           <img
             onClick={() => setSignIn(false)}
             className="loginScreen__logo"
-            src="https://farm6.staticflickr.com/5821/20639706793_8c038faa4a_o.png"
+            src={Plewrm_Logo}
+            // src="https://farm6.staticflickr.com/5821/20639706793_8c038faa4a_o.png"
             alt=""
           />
 
